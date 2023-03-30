@@ -10,13 +10,28 @@ export default function App() {
   useEffect(() => {
     // console.log("Component Mounted");
 
+    const chars: string = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@_";
+    const passwordLength: number = 13;
+
+    function getGeneratedPassword(): string {
+      var newPassword: string = "";
+      for (let i = 0; i < passwordLength; i++) {
+        var randomNumber = Math.floor(Math.random() * chars.length);
+        newPassword += chars.charAt(randomNumber);
+      }
+      return newPassword;
+    }
+
     $("#btnClear").on("click", function () {
       $("#pwdField").val("");
     });
 
     $("#btnGeneratePassword").on("click", function () {
-      // CODE HERE
+      $("#pwdField").val(getGeneratedPassword());
 
+      if ($("#pwdField").val() == "") {
+        $("#pwdField").css("outline", 0);
+      }
     });
   }, []);
 
@@ -36,6 +51,10 @@ export default function App() {
               variant="outlined"
               placeholder="Your generated password"
               fullWidth={true}
+              defaultValue="*****"
+              InputProps={{
+                readOnly: true,
+              }}
             />
           </div>
 
