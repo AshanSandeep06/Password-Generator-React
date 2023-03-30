@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { TextField } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 
 export default function App() {
   return (
@@ -12,7 +12,7 @@ export default function App() {
             <h1 className="text-[25px]">Automatic Password Generator</h1>
           </div>
 
-          <div className="w-3/4">
+          <div className="w-3/4 mb-5">
             <TextField
               label="Password"
               type="text"
@@ -23,7 +23,12 @@ export default function App() {
           </div>
 
           <div>
-            <button>Generate Password</button>
+            <button
+              type="button"
+              className="mt-2 bg-blue-900 text-white py-[10px] px-[18px] rounded-lg font-medium"
+            >
+              Generate Password
+            </button>
           </div>
         </div>
       </form>
