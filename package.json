@@ -1,6 +1,7 @@
 {
   "name": "react-password-generator-app",
   "version": "0.1.0",
+  "homepage": "https://AshanSandeep06.github.io/Password-Generator-React",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
