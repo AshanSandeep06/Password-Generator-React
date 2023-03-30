@@ -9,7 +9,11 @@ module.exports = {
         "blue-custom":{
           100: '#16168b'
         }
-      }
+      },
+
+      fontFamily: {
+        "poppins": ['Poppins', 'sans-serif']
+    }
     },
   },
   plugins: [],
