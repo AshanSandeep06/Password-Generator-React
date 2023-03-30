@@ -29,10 +29,6 @@ export default function App() {
 
     $("#btnGeneratePassword").on("click", function () {
       $("#pwdField").val(getGeneratedPassword());
-
-      if ($("#pwdField").val() == "") {
-        $("#pwdField").css("outline", 0);
-      }
     });
   }, []);
 
