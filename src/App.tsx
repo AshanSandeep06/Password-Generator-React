@@ -15,8 +15,8 @@ export default function App() {
     });
 
     $("#btnGeneratePassword").on("click", function () {
-      // CODE
-      
+      // CODE HERE
+
     });
   }, []);
 
