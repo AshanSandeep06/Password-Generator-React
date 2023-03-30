@@ -6,7 +6,7 @@ function App() {
   return (
     <section id="app" className="w-screen h-screen">
       <div className="bg-blue-900 w-1/2 h-1/2">
-
+        
       </div>
     </section>
   );
