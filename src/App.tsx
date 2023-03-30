@@ -1,10 +1,16 @@
-import React, { Component } from "react";
+import React, { Component, useEffect, useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { Button, TextField } from "@mui/material";
 import $ from "jquery";
 
 export default function App() {
+  const [data, setData] = useState(0);
+
+  useEffect(() => {
+    console.log("Component Mounted");
+  }, []);
+
   return (
     <section className="w-screen h-screen font-poppins font-semibold">
       <form className="w-full h-full py-8 px-32 flex flex-col gap-3 items-center justify-center">
