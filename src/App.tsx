@@ -1,15 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
-    <section id="app" className="w-screen h-screen flex justify-center items-center bg-blue-custom-100">
-      <div className="bg-blue-900 w-1/2 h-1/2">
-
-      </div>
+    <section className="h-full">
+      <form className="w-full h-full py-8 px-32 flex flex-col gap-3 items-center justify-center">
+        <div className="pt-5 w-1/2 px-16 flex flex-col gap-4 items-center shadow-xl h-[300px] rounded-xl">
+          <h1>Login Form</h1>
+        </div>
+      </form>
     </section>
   );
 }
-
-export default App;
