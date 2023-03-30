@@ -9,6 +9,10 @@ export default function App() {
 
   useEffect(() => {
     // console.log("Component Mounted");
+
+    $("#btnClear").on("click", function () {
+      $("#pwdField").val("");
+    });
   }, []);
 
   return (
@@ -31,14 +35,16 @@ export default function App() {
           </div>
 
           <div className="flex gap-8 justify-center w-full">
-            <button id="btnGeneratePassword"
+            <button
+              id="btnGeneratePassword"
               type="button"
               className="mt-2 bg-blue-900 text-white py-[10px] px-[18px] rounded-lg font-medium"
             >
               Generate Password
             </button>
 
-            <button id="btnClear"
+            <button
+              id="btnClear"
               type="button"
               className="mt-2 border border-yellow-500 text-yellow-500 py-[10px] px-[18px] rounded-lg font-medium hover:bg-yellow-500 hover:text-white"
             >
