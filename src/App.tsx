@@ -23,7 +23,7 @@ export default function App() {
             />
           </div>
 
-          <div>
+          <div className="flex gap-8 justify-center w-full">
             <button
               type="button"
               className="mt-2 bg-blue-900 text-white py-[10px] px-[18px] rounded-lg font-medium"
