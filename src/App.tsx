@@ -14,7 +14,7 @@ export default function App() {
 
           <div className="w-3/4 mb-5">
             <TextField
-              className="font-poppins tracking-[2px] text-[25px]"
+              id="pwdField"
               label="Password"
               type="text"
               variant="outlined"
@@ -29,6 +29,13 @@ export default function App() {
               className="mt-2 bg-blue-900 text-white py-[10px] px-[18px] rounded-lg font-medium"
             >
               Generate Password
+            </button>
+
+            <button
+              type="button"
+              className="mt-2 border border-yellow-500 text-yellow-500 py-[10px] px-[18px] rounded-lg font-medium hover:bg-yellow-500 hover:text-white"
+            >
+              Clear
             </button>
           </div>
         </div>
