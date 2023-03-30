@@ -14,6 +14,7 @@ export default function App() {
 
           <div className="w-3/4 mb-5">
             <TextField
+              className="font-poppins tracking-[2px] text-[25px]"
               label="Password"
               type="text"
               variant="outlined"
