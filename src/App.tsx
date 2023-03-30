@@ -10,7 +10,8 @@ export default function App() {
   useEffect(() => {
     // console.log("Component Mounted");
 
-    const chars: string = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@_";
+    const chars: string =
+      "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@_";
     const passwordLength: number = 13;
 
     function getGeneratedPassword(): string {
