@@ -6,7 +6,7 @@ function App() {
   return (
     <section id="app">
       <div className="">
-        
+
       </div>
     </section>
   );
