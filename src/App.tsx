@@ -4,7 +4,7 @@ import "./App.css";
 
 function App() {
   return (
-    <section id="app" className="w-screen h-screen flex justify-center items-center">
+    <section id="app" className="w-screen h-screen flex justify-center items-center bg-blue-custom-100">
       <div className="bg-blue-900 w-1/2 h-1/2">
 
       </div>
