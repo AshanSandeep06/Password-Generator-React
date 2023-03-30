@@ -13,6 +13,11 @@ export default function App() {
     $("#btnClear").on("click", function () {
       $("#pwdField").val("");
     });
+
+    $("#btnGeneratePassword").on("click", function () {
+      // CODE
+      
+    });
   }, []);
 
   return (
