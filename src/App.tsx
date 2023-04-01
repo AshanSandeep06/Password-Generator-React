@@ -6,7 +6,7 @@ import $ from "jquery";
 
 export default function App() {
   const [data, setData] = useState(0);
-
+  
   useEffect(() => {
     // console.log("Component Mounted");
 
